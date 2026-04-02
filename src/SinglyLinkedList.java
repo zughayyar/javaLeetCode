@@ -1,10 +1,19 @@
 public class SinglyLinkedList {
-    int key, value;
+    int value;
     SinglyLinkedList next;
 
-    public SinglyLinkedList(int key, int value) {
-        this.key = key;
+    SinglyLinkedList() {
+        this.value = 0;
+        this.next = null;
+    }
+
+    public SinglyLinkedList(int value) {
         this.value = value;
         this.next = null;
+    }
+
+    public SinglyLinkedList(int value, SinglyLinkedList next) {
+        this.value = value;
+        this.next = next;
     }
 }
